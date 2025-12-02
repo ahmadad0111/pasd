@@ -18,7 +18,7 @@ The following GIFs illustrate how a **HiPT agent (left) and a PASD agent (right)
 
 | HiPT | PASD |
 |------|------|
-| ![HiPT Skill Strip](Results/frames_output/hipt/cramped_room/skill_strip_hipt_cramped_room.png) | ![PASD Skill Strip](Results/frames_output/pasd/cramped_room/skill_strip_pasd_cramped_room.png) |
+| ![HiPT Skill Strip](Results/skill_plots/skill_strip_hipt_cramped_room.png) | ![PASD Skill Strip](Results/skill_plots/skill_strip_pasd_cramped_room.png) |
 
 **Observations:**  
 - PASD adapts dynamically to partner behaviors, showing diverse skill sequences.  
@@ -39,7 +39,7 @@ Side-by-side comparison of **HiPT and PASD** in the Coordination Ring layout.
 
 | HiPT | PASD |
 |------|------|
-| ![HiPT Skill Strip](Results/frames_output/hipt/coordination_ring/skill_strip_hipt_coordination_ring.png) | ![PASD Skill Strip](Results/frames_output/pasd/coordination_ring/skill_strip_pasd_coordination_ring.png) |
+| ![HiPT Skill Strip](Results/skill_plots/skill_strip_hipt_coordination_ring.png) | ![PASD Skill Strip](Results/skill_plots/skill_strip_pasd_coordination_ring.png) |
 
 **Observations:**  
 - PASD captures partner-preferred coordination patterns and executes smooth, consistent skill sequences.  
