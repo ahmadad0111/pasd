@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: ./server
+      args:
+        BUILD_ENV: "${BUILD_ENV:-production}"
+        OVERCOOKED_BRANCH: "${OVERCOOKED_BRANCH:-master}"
+        GRAPHICS: "${GRAPHICS:-overcooked_graphics_v2.2.js}"
+    shm_size: "2gb"  # Reduce if needed
+    environment: 
+      FLASK_ENV: "${BUILD_ENV:-production}"
+    ports:
+      - "80:5000"          # Flask web app
+      - "5433:5433"        # Database port
+      - "16571:16571/udp"  # LSL multicast discovery port
+      - "16572-16604:16572-16604/udp"  # LSL unicast query ports
+      - "16572-16604:16572-16604/tcp"  # LSL TCP data transmission ports
+    volumes:
+      - data:/app/data
+
+volumes:
+  data:

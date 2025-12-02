@@ -1,0 +1,83 @@
+{
+    "logfile" : "app.log",
+    "layouts" : ["cramped_room","asymmetric_advantages", "coordination_ring", "forced_coordination", "counter_circuit"],
+    "MAX_GAMES" : 10,
+    "MAX_GAME_LENGTH" : 120,
+    "AGENT_DIR" : "./static/assets/agents",
+    "MAX_FPS" : 30,
+    "predefined" : {
+        "experimentParams" : {
+            "layouts" : ["counter_circuit", "cramped_room"],
+            "gameTime" : 5,
+            "playerZero" : "human",
+            "playerOne" : "human",
+            "randomized" : true,
+            "dataCollection": "on"
+        },
+        "lobbyWaitTime" : 300000
+    },
+    "tutorial" : {
+        "tutorialParams" : {
+            "layouts" : [ "tutorial_0", "tutorial_0", "tutorial_0", "tutorial_0"],
+            "playerZero" : "human",
+            "playerOne" : "TutorialAI",
+            "oldDynamics": "on",
+            "IsTutorial": true
+        },
+        "tomato_value" : 13,
+        "onion_value" : 21,
+        "questionnaire_links": {
+            "demographic": "https://researchsurveys.deakin.edu.au/jfe/form/SV_6fEEYHO7vmkBu9U",
+            "pre_game": "https://researchsurveys.deakin.edu.au/jfe/form/SV_eXM1EEX2EeSLIaO"
+            }
+    },
+    "layout_globals" : {
+        "onion_value" : 21,
+        "tomato_value" : 13,
+        "onion_time" : 15,
+        "tomato_time" : 7,
+        "order_bonus" : 2,
+        "max_num_ingredients" : 3
+    },
+    "default_layout": "cramped_room",
+    "layout_agent_mapping": {
+        "cramped_room": "PPOCrampedRoom",
+        "asymmetric_advantages": "PPOAsymmetricAdvantages",
+        "coordination_ring": "PPOCoordinationRing",
+        "forced_coordination": "PPOForcedCoordination",
+        "counter_circuit": "PPOCounterCircuit"
+    },
+    "layout_agent_mapping_hrl": {
+        "cramped_room": "PPOCrampedRoom",
+        "asymmetric_advantages": "PPOAsymmetricAdvantages",
+        "coordination_ring": "PPOCoordinationRing",
+        "forced_coordination": "PPOForcedCoordination",
+        "counter_circuit": "PPOCounterCircuit"
+    },
+    "total_num_rounds": 1,
+    "initial_round": 1,
+    "initial_session": 1,
+    "initial_phase": 1,
+    "game_flow_on": 1,
+    "is_ending": 0,
+    "randomize_layout": true,
+    "randomize_xai": 1,
+    "disable_xai": true,
+    "xai_assignment": ["NoX", "StaticX", "AdaX"],
+    "ai_assignment": ["hipt", "pasd"],
+    "questionnaire_links_xai": {
+        "demographic": "https://researchsurveys.deakin.edu.au/jfe/form/SV_6fEEYHO7vmkBu9U",
+        "pre_game": "https://researchsurveys.deakin.edu.au/jfe/form/SV_eXM1EEX2EeSLIaO",
+        "post_session": "https://researchsurveys.deakin.edu.au/jfe/form/SV_72RCeM76OoZH4Lc",
+        "post_session_nox": "https://researchsurveys.deakin.edu.au/jfe/form/SV_3racoez95wJ2uY6",
+        "post_game": "https://researchsurveys.deakin.edu.au/jfe/form/SV_eyaYl7WnQ2YsCUK"
+    },
+    "questionnaire_links": {
+        "demographic": "https://researchsurveys.deakin.edu.au/jfe/form/SV_1AdEtOanFFEZXGS",
+        "post_session": "https://researchsurveys.deakin.edu.au/jfe/form/SV_ePByXht2DgysFka",
+        "post_game": "test"
+    },
+    "enable_survey": true,
+    "disable_close": true,
+    "ttsEnabled":false
+}

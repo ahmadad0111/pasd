@@ -1,0 +1,24 @@
+{
+  "uid": "",
+  "playerZero": "PPOCoordinationRing",
+  "playerOne": "human",
+  "layout": "coordination_ring",
+  "gameTime": "10",
+  "oldDynamics": "on",
+  "dataCollection": true,
+  "xaiAgentType": "NoX",
+  "aiAgentType": "Baseline",
+  "layouts": [
+    "coordination_ring",
+    "forced_coordination",
+    "cramped_room",
+    "asymmetric_advantages",
+    "counter_circuit"
+  ],
+  "mdp_params": { "old_dynamics": true },
+  "collection_config": {
+    "time": "2025-04-09_02-11-30",
+    "type": "AH",
+    "old_dynamics": "Old"
+  }
+}
