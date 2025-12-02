@@ -2,62 +2,46 @@
 
 ## Results
 
-Below are visualizations showing **partner-conditioned skill evolution** during evaluation in two layouts: **Cramped Room** and **Coordination Ring**. For each layout, we present side-by-side GIFs comparing **HiPT** and **PASD**, highlighting differences in skill selection and adaptive behaviors.
+Below are visualizations showing **partner-conditioned skill evolution** during evaluation in two layouts: **Cramped Room** and **Coordination Ring**. For each layout, we present **side-by-side comparisons** of HiPT and PASD to illustrate differences in skill selection and adaptive behaviors.
 
 ---
 
 ### Cramped Room Evaluation
 
-- **Skill Evolution Plot**  
-![Cramped Room Skills](plots/cramped_room_skill_evolution.png)
+The following GIFs illustrate how a **HiPT agent (left) and a PASD agent (right)** adapt their skills when partnering with the same self-play agent in the Cramped Room layout.
 
-- **Gameplay Comparison**  
-<div style="display:flex; gap:20px;">
-  <div>
-    <p><strong>HiPT</strong></p>
-    ![HiPT Cramped Room](Results/frames_output/hipt/cramped_room/hipt_cramped_room.gif)
-  </div>
-  <div>
-    <p><strong>PASD</strong></p>
-    ![PASD Cramped Room](Results/frames_output/pasd/cramped_room/pasd_cramped_room.gif)
-  </div>
-</div>
+| HiPT | PASD |
+|------|------|
+| ![HiPT Cramped Room](Results/frames_output/hipt/cramped_room/hipt_cramped_room.gif) | ![PASD Cramped Room](Results/frames_output/pasd/cramped_room/pasd_cramped_room.gif) |
+
+**Skill evolution strips:**  
+
+| HiPT | PASD |
+|------|------|
+| ![HiPT Skill Strip](Results/frames_output/hipt/cramped_room/skill_strip_hipt_cramped_room.png) | ![PASD Skill Strip](Results/frames_output/pasd/cramped_room/skill_strip_pasd_cramped_room.png) |
 
 **Observations:**  
-- PASD dynamically selects skills aligned with partner behavior, e.g., coordinating plate or soup collection efficiently.  
-- HiPT shows **skill collapse**, switching skills less frequently and failing to adapt to partner strategies.  
-- These visualizations highlight how PASD disentangles partner-adaptive behaviors, maintaining **coherent sequences of low-level actions**.
+- PASD adapts dynamically to partner behaviors, showing diverse skill sequences.  
+- HiPT exhibits fewer skill switches and less partner-aligned adaptation.  
+- Skill strips highlight that PASD maintains **distinct, consistent skills** over time, while HiPT shows partial skill collapse.
 
 ---
 
 ### Coordination Ring Evaluation
 
-- **Skill Evolution Plot**  
-![Coordination Ring Skills](plots/coordination_ring_skill_evolution.png)
+Side-by-side comparison of **HiPT and PASD** in the Coordination Ring layout.
 
-- **Gameplay Comparison**  
-<div style="display:flex; gap:20px;">
-  <div>
-    <p><strong>HiPT</strong></p>
-    ![HiPT Coordination Ring](Results/frames_output/hipt/coordination_ring/hipt_coordination_ring.gif)
-  </div>
-  <div>
-    <p><strong>PASD</strong></p>
-    ![PASD Coordination Ring](Results/frames_output/pasd/coordination_ring/pasd_coordination_ring.gif)
-  </div>
-</div>
+| HiPT | PASD |
+|------|------|
+| ![HiPT Coordination Ring](Results/frames_output/hipt/coordination_ring/hipt_coordination_ring.gif) | ![PASD Coordination Ring](Results/frames_output/pasd/coordination_ring/pasd_coordination_ring.gif) |
+
+**Skill evolution strips:**  
+
+| HiPT | PASD |
+|------|------|
+| ![HiPT Skill Strip](Results/frames_output/hipt/coordination_ring/skill_strip_hipt_coordination_ring.png) | ![PASD Skill Strip](Results/frames_output/pasd/coordination_ring/skill_strip_pasd_coordination_ring.png) |
 
 **Observations:**  
-- PASD captures partner-preferred coordination patterns, e.g., clockwise or counter-clockwise movement, ensuring smooth collaboration.  
-- HiPT struggles to differentiate partner strategies, resulting in delayed adaptation and occasional coordination failures.  
-- Positive pairs of sub-trajectories under PASD encourage **consistent skill execution** across similar partner behaviors.
-
----
-
-### Installation
-
-* Create a new environment:
-
-```bash
-conda create -n pasd python=3.10
-conda activate pasd
+- PASD captures partner-preferred coordination patterns and executes smooth, consistent skill sequences.  
+- HiPT struggles to differentiate partner strategies, leading to delayed adaptation.  
+- Skill strips demonstrate **clear partner-aware skill separation** in PASD versus partial skill overlap in HiPT.
