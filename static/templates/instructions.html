@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/survey-core@1.9.51/defaultV2.min.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+    <style>
+      img.center {
+        display: block;
+        margin: 0 auto;
+      }
+      table, td, th {  
+        border: 1px solid #ddd;
+        text-align: center;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th, td {
+        padding: 15px;
+      }
+      tr:nth-child(even) {background-color: #f2f2f2;}
+    </style>
+
+    <title>Instructions</title>
+    <link rel="Favicon" href="static/favicon.ico" />
+
+    <script src="static/lib/jquery-min.js" type="text/javascript"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container" style="padding-top: 30px; max-width: 600px;">
+      <h4 class="text-center"><button id="back">Back to game</button></h4>
+      <h2 class="text-center">Instructions</h2>
+      <p class="inst_left_text">
+        Hello! <br>
+        In this survey you will be playing a cooperative cooking game. <br>
+        You will play one of two chefs in a restaurant that serves onion soups.
+      </p>
+
+      <br>
+      <hr>
+      <br>
+
+      <h3 class="text-center">Layouts</h3>
+      <p class="inst_left_text">
+        This is what a level of the game looks like:
+      </p>
+      <img class="center" src="static/images/training0.png" style="width:600px;">
+      <p class="inst_left_text">
+        <br>
+        The image below labels each different component of the game. The dark brown tiles are counters that
+        you can place objects on (but cannot walk on), and the light beige tiles are floor tiles.
+      </p>
+      <img class="center" src="static/images/training0-annotated.png" style="width:600px;">
+
+      <br>
+      <hr>
+      <br>
+
+      <h3 class="text-center">Movement and interactions</h3>
+      <img class="center" src="static/images/space-arrows.png" style="width:250px">
+      <p class="inst_left_text">
+        You can move up, down, left, and right using
+        the <b>arrow keys</b>, and interact with objects
+        using the <b>spacebar</b>.
+      </p>
+      <p class="inst_left_text">
+        You can interact with objects by facing them and pressing
+        <b>spacebar</b>. Here are some examples:
+        <ul>
+          <li>You can pick up onions by facing an onion dispenser or an onion on
+            a counter and pressing <b>spacebar</b>.</li>
+          <li>If you are holding an onion or dish and are facing an empty counter,
+            and press <b>spacebar</b>, you will put the onion/dish on the counter.</li>
+          <li>If you are holding an onion and are facing a pot that is not full,
+            and press <b>spacebar</b>, you will put the onion in the pot.</li>
+          <li>If you are holding a dish and are facing a pot with a soup that has finished cooking,
+            and press <b>spacebar</b>, you will move the soup from the pot to your dish.</li>
+          <li>If you are holding a dish with soup in it and are facing a serving area,
+            and press <b>spacebar</b>, you will serve the soup.</li>
+        </ul>
+      </p>
+
+      <br>
+      <p class="inst_left_text">
+        <i>NOTE:</i> You and your teammate <u><b>cannot occupy the same location at the same time</b></u>. If both of
+        you try to move into the same space, neither action will go through.
+      </p>
+      <br>
+      <hr>
+      <br>
+
+      <h3 class="text-center">Cooking</h3>
+      <img class="center" src="static/images/soup.png" style="width:250px">
+      <p class="inst_left_text">
+        Once 3 onions are in the pot, the soup will automatically start cooking.
+        When a soup begins cooking, you'll notice a red number appear over the pot to 
+        denote the cook time. This number counts up to 20 at which point the soup is done.
+        Each soup served (by either you or your teammate) awards 20 points to your team.
+      </p>
+
+      <br>
+      <hr>
+      <br>
+
+      <h3 class="text-center">Goal</h3>
+      <p class="inst_left_text">
+        The goal of the game is for your team to maximize your points by delivering as many soups as possible
+        within the provided time. Each round will last 80 seconds.
+      </p>
+      <div id="control" class="text-center" style="margin-top: 60px;">
+        <button id="tutorial"href="./tutorial">Go to Tutorial</a>
+      </div>
+      <br>
+      <br>
+    </div>
+  <script>
+     $('.btn-cta').each(function(i, el){
+        let $this = $(this); // only need to create the object once
+        $this.attr({
+            href: $this.attr("href") + window.location.search
+        });
+    });
+    $('#tutorial').click(function(i, el){
+      window.location.href = "./tutorial";
+    });
+    $('#back').click(function(i, el){
+      window.location.href = "./";
+    });
+  </script>
+  </body>
+</html>
