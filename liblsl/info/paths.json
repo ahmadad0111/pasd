@@ -1,0 +1,113 @@
+{
+  "paths": [
+    {
+      "_path": "bin/lslver",
+      "path_type": "hardlink",
+      "sha256": "15db1a367a3d2fe7339d085dae78f005b1a5341d52b01b65cb9bd994476c4115",
+      "size_in_bytes": 15896
+    },
+    {
+      "_path": "include/lsl/common.h",
+      "path_type": "hardlink",
+      "sha256": "e6c31f8b8e50e6a4de10c4bac007116bdc0a76105920d01d597d19361c4848d1",
+      "size_in_bytes": 7882
+    },
+    {
+      "_path": "include/lsl/inlet.h",
+      "path_type": "hardlink",
+      "sha256": "66bf7869b1e44b6ab0221ae23103a3f8ebeb390092779c2923f4661b8bfabd5a",
+      "size_in_bytes": 17772
+    },
+    {
+      "_path": "include/lsl/outlet.h",
+      "path_type": "hardlink",
+      "sha256": "699b601452cfb5a63bbf20cad3abcd24b4154f58913107ae16105de272634723",
+      "size_in_bytes": 16539
+    },
+    {
+      "_path": "include/lsl/resolver.h",
+      "path_type": "hardlink",
+      "sha256": "5d59aee216d114663ae3889b994b7ebd763a9a87114efeb61a34bd876cd932ef",
+      "size_in_bytes": 8779
+    },
+    {
+      "_path": "include/lsl/streaminfo.h",
+      "path_type": "hardlink",
+      "sha256": "ea1f369035f49cedc5d9a0bd422c4d407346ed9933652754399d6e5dadab395d",
+      "size_in_bytes": 9061
+    },
+    {
+      "_path": "include/lsl/types.h",
+      "path_type": "hardlink",
+      "sha256": "394ac8258c9af84a17ebe8b78ad4b07e608cc715f28dd6f9b04e0d206bc306d6",
+      "size_in_bytes": 2328
+    },
+    {
+      "_path": "include/lsl/xml.h",
+      "path_type": "hardlink",
+      "sha256": "4ade06054c008560dd5d18d83c4bd3480bf22919036119ec3cd2e9caf74ed3fc",
+      "size_in_bytes": 3693
+    },
+    {
+      "_path": "include/lsl_c.h",
+      "path_type": "hardlink",
+      "sha256": "7191f28ec454149aebed65fffa7257733b7574adffa3a5e465fe03a2df835e03",
+      "size_in_bytes": 1160
+    },
+    {
+      "_path": "include/lsl_cpp.h",
+      "path_type": "hardlink",
+      "sha256": "15373e7363634bfa749caf9f9178a9101ce96dadd28081aa41913e5b18470c7e",
+      "size_in_bytes": 76408
+    },
+    {
+      "_path": "lib/cmake/LSL/LSLCMake.cmake",
+      "path_type": "hardlink",
+      "sha256": "6e5b08f710302a42601d7b121ea19d8e2b9d44baceb800d9a7f4345b734e8f83",
+      "size_in_bytes": 13603
+    },
+    {
+      "_path": "lib/cmake/LSL/LSLConfig.cmake",
+      "path_type": "hardlink",
+      "sha256": "2fda199e4dfc39de6678a200915723a494df53b215081180ec5d58a755efd7e3",
+      "size_in_bytes": 220
+    },
+    {
+      "_path": "lib/cmake/LSL/LSLConfigVersion.cmake",
+      "path_type": "hardlink",
+      "sha256": "57a373215d8ca31897ba6e091711bcd197e61d8828de74dda1c328ff291e02be",
+      "size_in_bytes": 1862
+    },
+    {
+      "_path": "lib/cmake/LSL/LSLTargets-release.cmake",
+      "path_type": "hardlink",
+      "sha256": "780ce1b57dc31fa2757cc6009f9ccd62767e5f54ec007ee852b73848fbc07bd0",
+      "size_in_bytes": 813
+    },
+    {
+      "_path": "lib/cmake/LSL/LSLTargets.cmake",
+      "path_type": "hardlink",
+      "sha256": "3500d6bf3e5d99254e6ed65925fd32bf62c25fbbaf80298c52fcbcf2c48f6f7d",
+      "size_in_bytes": 4241
+    },
+    {
+      "_path": "lib/liblsl.so",
+      "path_type": "softlink",
+      "sha256": "532d454c07518790ed4e419ddcc9d7ad1b76db137f5185858736acfd3b1cff01",
+      "size_in_bytes": 1177504
+    },
+    {
+      "_path": "lib/liblsl.so.1.16.2",
+      "path_type": "hardlink",
+      "sha256": "532d454c07518790ed4e419ddcc9d7ad1b76db137f5185858736acfd3b1cff01",
+      "size_in_bytes": 1177504
+    },
+    {
+      "_path": "lib/liblsl.so.2",
+      "path_type": "softlink",
+      "sha256": "532d454c07518790ed4e419ddcc9d7ad1b76db137f5185858736acfd3b1cff01",
+      "size_in_bytes": 1177504
+    }
+  ],
+  "paths_version": 1
+}

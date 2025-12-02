@@ -1,0 +1,93 @@
+# This file created by conda-build 24.11.2
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Thu Jan 16 08:03:54 2025
+# ------------------------------------------------
+
+package:
+  name: liblsl
+  version: 1.16.2
+source:
+  sha256: 923aa4c81c0fef651c325e3c27aa5b96771540ca2a0933d1b327db27c6dac839
+  url: https://github.com/sccn/liblsl/archive/refs/tags/v1.16.2.tar.gz
+build:
+  number: '3'
+  run_exports:
+    - liblsl >=1.16.2,<2.0a0
+  string: h4e8d35e_3
+requirements:
+  build:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 2_gnu
+    - binutils_impl_linux-64 2.43 h4bf12b8_2
+    - binutils_linux-64 2.43 h4852527_2
+    - bzip2 1.0.8 h4bc722e_7
+    - c-ares 1.34.4 hb9d3cd8_0
+    - ca-certificates 2024.12.14 hbcca054_0
+    - cmake 3.31.4 h74e3db0_0
+    - gcc_impl_linux-64 13.3.0 hfea6d02_1
+    - gcc_linux-64 13.3.0 hc28eda2_7
+    - gxx_impl_linux-64 13.3.0 hdbfa832_1
+    - gxx_linux-64 13.3.0 h6834431_7
+    - kernel-headers_linux-64 3.10.0 he073ed8_18
+    - keyutils 1.6.1 h166bdaf_0
+    - krb5 1.21.3 h659f571_0
+    - ld_impl_linux-64 2.43 h712a8e2_2
+    - libcurl 8.11.1 h332b0f4_0
+    - libedit 3.1.20240808 pl5321h7949ede_0
+    - libev 4.33 hd590300_2
+    - libexpat 2.6.4 h5888daf_0
+    - libgcc 14.2.0 h77fa898_1
+    - libgcc-devel_linux-64 13.3.0 h84ea5a7_101
+    - libgcc-ng 14.2.0 h69a702a_1
+    - libgomp 14.2.0 h77fa898_1
+    - liblzma 5.6.3 hb9d3cd8_1
+    - libnghttp2 1.64.0 h161d5f1_0
+    - libsanitizer 13.3.0 heb74ff8_1
+    - libssh2 1.11.1 hf672d98_0
+    - libstdcxx 14.2.0 hc0a3c3a_1
+    - libstdcxx-devel_linux-64 13.3.0 h84ea5a7_101
+    - libstdcxx-ng 14.2.0 h4852527_1
+    - libuv 1.49.2 hb9d3cd8_0
+    - libzlib 1.3.1 hb9d3cd8_2
+    - make 4.4.1 hb9d3cd8_2
+    - ncurses 6.5 h2d0b736_2
+    - openssl 3.4.0 h7b32b05_1
+    - rhash 1.4.5 hb9d3cd8_0
+    - sysroot_linux-64 2.17 h0157908_18
+    - tzdata 2024b hc8b5060_0
+    - zstd 1.5.6 ha6fb4c9_0
+  host:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 2_gnu
+    - libgcc 14.2.0 h77fa898_1
+    - libgomp 14.2.0 h77fa898_1
+    - libstdcxx 14.2.0 hc0a3c3a_1
+    - pugixml 1.15 h3f63f65_0
+  run:
+    - __glibc >=2.17,<3.0.a0
+    - libgcc >=13
+    - libstdcxx >=13
+    - pugixml >=1.15,<1.16.0a0
+test:
+  commands:
+    - lslver
+    - test -f $PREFIX/include/lsl_c.h
+    - test -f $PREFIX/include/lsl_cpp.h
+    - test -f $PREFIX/lib/liblsl${SHLIB_EXT}
+about:
+  dev_url: https://github.com/sccn/liblsl
+  doc_url: https://labstreaminglayer.readthedocs.io/
+  home: https://github.com/sccn/liblsl
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Multi-modal time-synched data transmission over local network
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: azure_20250116.1.1
+  recipe-maintainers:
+    - cboulay
+    - tstenner
+  remote_url: https://github.com/conda-forge/liblsl-feedstock
+  sha: 2439facf7162ca998142d41ea46be02554e2338b

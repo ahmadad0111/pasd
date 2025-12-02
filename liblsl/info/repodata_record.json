@@ -1,0 +1,25 @@
+{
+  "arch": "x86_64",
+  "build": "h4e8d35e_3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "libstdcxx >=13",
+    "pugixml >=1.15,<1.16.0a0"
+  ],
+  "fn": "liblsl-1.16.2-h4e8d35e_3.conda",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "8e1adad4e692a71745591f65e7839555",
+  "name": "liblsl",
+  "platform": "linux",
+  "sha256": "3e0ea98e41c463da75791df3df855a0e1fea4f49bf4b22ac8f9a86fb8ee66790",
+  "size": 387117,
+  "subdir": "linux-64",
+  "timestamp": 1737014876000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/liblsl-1.16.2-h4e8d35e_3.conda",
+  "version": "1.16.2"
+}

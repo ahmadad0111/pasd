@@ -1,0 +1,18 @@
+{
+  "arch": "x86_64",
+  "build": "h4e8d35e_3",
+  "build_number": 3,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "libstdcxx >=13",
+    "pugixml >=1.15,<1.16.0a0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "liblsl",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1737014876115,
+  "version": "1.16.2"
+}
