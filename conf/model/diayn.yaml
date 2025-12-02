@@ -1,0 +1,15 @@
+name : diayn
+trainer : 
+  _target_ : trainers.diayn_trainer.DIAYNTrainer
+runner : 
+  _target_ : runners.diayn_runner.DIAYNRunner
+hi_agent:
+  _target_: modules.agents.HiAgent
+lo_agent:
+  _target_: modules.agents.LoAgent
+discriminator:
+  _target_: modules.agents.Discriminator
+partner :
+  _target_: modules.agents.CNNAgent
+
+total_timesteps: 1e7

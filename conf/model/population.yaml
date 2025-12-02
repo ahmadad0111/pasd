@@ -1,0 +1,9 @@
+name : sp_population
+trainer : 
+  _target_ : trainers.population_trainer.SPPopulationTrainer
+runner : 
+  _target_ : runners.sp_population_runner.SPRunner 
+agent:
+  _target_: modules.agents.CNNAgent
+
+total_timesteps: 1e9

@@ -1,0 +1,65 @@
+defaults:
+  - _self_
+  - layout : cramped_room
+  - model : hipt
+
+gym_id: Overcooked-v1
+seed: 0
+cuda: True
+torch_deterministic: True
+device_id: 0
+train: False
+train_s2: False
+eval: True
+
+layout:
+  action_dim: 6
+  partner_pop_path: null
+  eval_partner_pop_path: null
+
+training:
+  num_envs: 30
+  population_size: 16
+  rollout_steps: 400
+  num_minibatches: 6
+  update_epochs: 8
+  disc_epochs: 10
+  batch_size: 0
+  minibatch_size: 0
+  gamma: 0.99 #discount factor
+  gae_lambda: 0.98
+  env_rew_coef: 1
+  kl_rew_coef: 100
+  disc_rew_coef: 1
+  anneal_lr: True
+  anneal_lambda: True
+  p_range: [20, 40]
+  optimizer:
+    _target_: torch.optim.Adam
+  agent_types:
+    - best
+    
+  clip_coef: 0.05
+  clip_vloss: True
+  value_coef: 0.5
+  ent_coef_lo: 0.01
+  ent_coef_lo_s1: 0.01
+  ent_coef_hi: 0.01
+  ent_coef_term: 0.01
+  max_grad_norm: 0.1
+  norm_adv: True
+  target_kl: null
+
+  jsd_coef: 0.05
+  disc_rew_scale: 1
+
+logging:
+  track: True
+  wandb_project_name: Overcooked-HiPT
+  wandb_entity: null
+  track_kl_rew: True
+  save_interval: 1e6
+
+evaluation:
+  agent_type: best
+  visualize_ep: True

@@ -1,0 +1,11 @@
+name : fcp
+trainer : 
+  _target_ : trainers.fcp_trainer.FCPTrainer
+runner : 
+  _target_ : runners.fcp_runner.FCPRunner 
+agent:
+  _target_: modules.agents.LSTMAgent
+partner :
+  _target_: modules.agents.CNNAgent
+
+total_timesteps: 1e7

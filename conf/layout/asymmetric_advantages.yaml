@@ -1,0 +1,16 @@
+name : asymmetric_advantages
+lr: 1e-3
+lr_disc: 1e-3
+init_lambda: 1
+min_lambda: 0.05
+anneal_lr_fraction: 3.0
+z_dim: 6
+observation_shape: [26, 9, 5]
+
+rshaped_horizon: 2.5e6
+soup_reward: True
+soup_reward_decay: False
+ingred_reward: True
+ingred_reward_decay: False
+
+sp_timesteps: 7e6

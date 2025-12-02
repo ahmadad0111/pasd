@@ -1,0 +1,11 @@
+name : hipt_cont
+trainer : 
+  _target_ : trainers.hipt_cont_trainer.HiPTTrainer
+runner : 
+  _target_ : runners.hipt_cont_runner.HiPTRunner 
+agent:
+  _target_: modules.agents.HiPPOAgent_cont
+partner :
+  _target_: modules.agents.CNNAgent
+
+total_timesteps: 1e8
